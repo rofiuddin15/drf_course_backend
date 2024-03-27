@@ -2,7 +2,7 @@
 
 Ini merupakan bahan untuk belajar REST API menggunakan Framework Django. Django merupakan framework berbasis bahasa pemrograman Python.
 
-# MATERI
+## MATERI
 
 - MODUL 1
 - MODUL 2
