@@ -4,6 +4,8 @@ Ini merupakan bahan untuk belajar REST API menggunakan Framework Django. Django 
 
 ## MATERI
 
+Berikut merupakan rangkaian materi yang kami susun dengan konsep module.
+
 - [MODUL 1](course/module_1.md)
 - MODUL 2
 - MODUL 3
