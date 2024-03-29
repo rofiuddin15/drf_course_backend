@@ -1,5 +1,5 @@
 # MODULE 3 - DRF - MODEL
-Pada module ini lakukan perubahan pada model dari App yang sebelumnya sudah kita buat. Tujuannya adalah untuk mempersiapkan data model sebagai penyimpanan, model pada django bertugas sebagai perantara koneksi ke database sekaligus pembentuk migration. Migration sendiri merupakan cetak biru data tabel.
+Pada module ini lakukan perubahan pada model dari App yang sebelumnya sudah kita buat. Tujuannya adalah untuk mempersiapkan data model sebagai penyimpanan, <b>model</b> pada django bertugas sebagai perantara koneksi ke database sekaligus pembentuk <b>migration</b>. Migration sendiri merupakan cetak biru data tabel.
 ## Membuat Struktur Data
 Sebagai contoh kita akan membuat API untuk aplikasi penjualan, disini kita butuh beberapa tabel, dan sebagai contoh dasar kita buat dua, yaitu:
 * Kategori Produk
@@ -24,6 +24,6 @@ Simpan dan jalankan perintah berikut untuk membentuk migrations.
 python manage.py makemigrations
 python manage.py migrate
 ```
-Selesai! proses pembuatan model sudah berhasil. Ini masih permulaan, selanjutnya buat sebuah serialization, proses ini kita akan bahas pada module berikutnya.
+Selesai! proses pembuatan model sudah berhasil. Ini masih permulaan, selanjutnya buat sebuah <b>serialization</b>, proses ini kita akan bahas pada module berikutnya.
 
 Selamat mencoba!
