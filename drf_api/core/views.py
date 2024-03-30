@@ -4,7 +4,7 @@ from rest_framework.response import Response
 from django.http import Http404
 from rest_framework.views import APIView
 from .models import Kategori, Produk
-from .serializers import KategoriSerializer, ProdukiSerializer
+from .serializers import KategoriSerializer, ProdukSerializer
 
 # Create your views here.
 @api_view(['GET', 'POST']) # decorator
@@ -56,11 +56,11 @@ class ProdukList(APIView):
     permission_classes = [permissions.AllowAny]
     def get(self, request, format=None):
         produk = Produk.objects.all()
-        serializer = ProdukiSerializer(produk, many=True)
+        serializer = ProdukSerializer(produk, many=True)
         return Response(serializer.data)
     
     def post(self, request, format=None):
-        serializer = ProdukiSerializer(data=request.data)
+        serializer = ProdukSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
@@ -79,12 +79,12 @@ class ProdukDetail(APIView):
         
     def get(self, request, pk, format=None):
         produk = self.get_object(pk)
-        serializer = ProdukiSerializer(produk)
+        serializer = ProdukSerializer(produk)
         return Response(serializer.data)
     
     def put(self, request, pk, format=None):
         produk = self.get_object(pk)
-        serializer = ProdukiSerializer(produk, data=request.data)
+        serializer = ProdukSerializer(produk, data=request.data)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data)

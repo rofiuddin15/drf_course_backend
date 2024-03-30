@@ -7,7 +7,7 @@ class KategoriSerializer(serializers.ModelSerializer):
         model = Kategori
         fields = ["id", "nama"]
 
-class ProdukiSerializer(serializers.ModelSerializer):
+class ProdukSerializer(serializers.ModelSerializer):
     class Meta:
         model = Produk
         fields = ["id", "nama"]
