@@ -8,6 +8,7 @@ class Kategori(models.Model):
         return self.nama
 
 class Produk(models.Model):
+    kategori = models.ForeignKey(Kategori, related_name="produk", on_delete=models.CASCADE)
     nama = models.CharField(max_length=200)
 
     def __str__(self):
